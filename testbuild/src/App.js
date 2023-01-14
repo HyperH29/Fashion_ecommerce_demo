@@ -4,6 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from "./Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CreateForm from "./Signin";
 
 
 let imgs = ['https://unsplash.com/photos/mEZ3PoFGs_k']
@@ -11,7 +12,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
+       <CreateForm />
+    {/*Here will be the landing page with a brief showing of items */}
     </div>
   );
 }
