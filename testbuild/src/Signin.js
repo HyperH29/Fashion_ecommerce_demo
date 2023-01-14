@@ -1,10 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-
+import logo1 from './logo1.svg';
 function CreateForm() {
     return (
         <div className={"signin-card"}>
         <Form>
+            <img src={logo1} alt={logo1}/>
             <Form.Label>Sign In</Form.Label>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
