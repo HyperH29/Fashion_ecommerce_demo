@@ -1,0 +1,12 @@
+.signin-card {
+    width: 400px;
+    text-align: center;
+    margin: 250px auto 0;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sign-logo {
+    margin-bottom: 40px;
+}

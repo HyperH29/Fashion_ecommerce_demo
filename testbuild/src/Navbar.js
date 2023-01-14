@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo1 from './logo1.svg';
+import logo2 from './logo2.svg';
 
 function BasicExample() {
     return (
@@ -32,5 +33,17 @@ function BasicExample() {
         </Navbar>
     );
 }
+// If on sign in page display name of company
+function Signin() {
+    return (
+        <Navbar bg="light" expand="md">
+            <Container className="">
+                <Navbar.Brand href="#home" style={{margin: "auto"}}><img src={logo2} style={{width:200}} alt="logo1" className="logo"/></Navbar.Brand>
+            </Container>
+        </Navbar>
+    );
+}
 
-export default BasicExample;
+//export {BasicExample, Signin};
+export default Signin;
+// export default BasicExample;
