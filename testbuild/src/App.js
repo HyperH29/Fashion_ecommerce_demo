@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from "./Navbar";
@@ -7,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CreateForm from "./Signin";
 import Hero from "./Hero";
 import CreateCard from "./Card";
+import './styles.css';
+
 
 
 let imgs = ['https://unsplash.com/photos/mEZ3PoFGs_k']

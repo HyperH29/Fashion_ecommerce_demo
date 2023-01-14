@@ -21,3 +21,35 @@ function CreateCard() {
 }
 
 export default CreateCard;
+
+// Using the method below, I want to set it for the button of main cards.
+// Or once image is clicked it will transition to more options below.
+// This will be for the items to buy.
+// import React, { useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+// import Collapse from 'react-bootstrap/Collapse';
+//
+// function Example() {
+//     const [open, setOpen] = useState(false);
+//
+//     return (
+//         <>
+//             <Button
+//                 onClick={() => setOpen(!open)}
+//                 aria-controls="example-collapse-text"
+//                 aria-expanded={open}
+//             >
+//                 click
+//             </Button>
+//             <Collapse in={open}>
+//                 <div id="example-collapse-text">
+//                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+//                     terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+//                     labore wes anderson cred nesciunt sapiente ea proident.
+//                 </div>
+//             </Collapse>
+//         </>
+//     );
+// }
+//
+// render(<Example />);
