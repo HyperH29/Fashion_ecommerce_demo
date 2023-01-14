@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo1 from './logo1.svg';
 import logo2 from './logo2.svg';
 
-function BasicExample() {
+function ProfileNav() {
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -27,23 +27,26 @@ function BasicExample() {
                                 Separated link
                             </NavDropdown.Item>
                         </NavDropdown>
+                        <Nav.Link href="#link"><img/>Account</Nav.Link>
+                        <Nav.Link href="#link"><img/>Basket</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
     );
 }
+// How would I get this to work.
 // If on sign in page display name of company
 function Signin() {
     return (
-        <Navbar bg="light" expand="md">
-            <Container className="">
+        <Navbar bg="light" expand="md" style={{border: 20}}>
+            <Container className="nav-bar">
                 <Navbar.Brand href="#home" style={{margin: "auto"}}><img src={logo2} style={{width:200}} alt="logo1" className="logo"/></Navbar.Brand>
             </Container>
         </Navbar>
     );
 }
 
-//export {BasicExample, Signin};
-export default Signin;
-// export default BasicExample;
+//export {ProfileNav, Signin};
+// export default Signin;
+ export default ProfileNav;

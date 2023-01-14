@@ -16,8 +16,8 @@ function Hero() {
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <img
-                    className="d-block w-50 h-50"
-                    src="https://as1.ftcdn.net/v2/jpg/02/57/42/72/1000_F_257427286_Lp7c9XdPnvN46TyFKqUaZpPADJ77ZzUk.jpg"
+                    className="d-block w-100 h-100"
+                    src="https://images.unsplash.com/photo-1610737245930-e4f41bab0b6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -27,8 +27,8 @@ function Hero() {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-50 h-10"
-                    src="https://as1.ftcdn.net/v2/jpg/02/57/42/72/1000_F_257427286_Lp7c9XdPnvN46TyFKqUaZpPADJ77ZzUk.jpg"
+                    className="d-block w-100 h-100"
+                    src="https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                     alt="Second slide"
                 />
 
@@ -39,8 +39,8 @@ function Hero() {
             </Carousel.Item>
             <Carousel.Item>
                 <img
-                    className="d-block w-50 h-50"
-                    src="https://as1.ftcdn.net/v2/jpg/02/57/42/72/1000_F_257427286_Lp7c9XdPnvN46TyFKqUaZpPADJ77ZzUk.jpg"
+                    className="d-block w-100 h-100"
+                    src="https://images.unsplash.com/photo-1624910996561-daeb5bd84fc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                     alt="Third slide"
                 />
 

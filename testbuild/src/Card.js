@@ -6,9 +6,10 @@ import Card from 'react-bootstrap/Card';
 //  Small screen will have 1 card per row
 function CreateCard() {
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem', padding:10, margin: 50 }}>
             <Card.Img variant="top" src="holder.js/100px180" />
             <Card.Body>
+                <img />
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
                     Some quick example text to build on the card title and make up the
