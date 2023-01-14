@@ -3,9 +3,9 @@ import Form from 'react-bootstrap/Form';
 import logo1 from './logo1.svg';
 function CreateForm() {
     return (
-        <div className={"signin-card"}>
-        <Form>
-            <img src={logo1} alt={logo1}/>
+        <div  className="signin-card ">
+            <img width={150} className= "img-thumbnail" src={logo1} alt={logo1}/>
+            <Form>
             <Form.Label>Sign In</Form.Label>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
@@ -17,7 +17,7 @@ function CreateForm() {
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" placeholder="Password" xs={4}/>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Check me out" />

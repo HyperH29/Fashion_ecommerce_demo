@@ -15,10 +15,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-       {/*<CreateForm />*/}
+       <CreateForm />
     {/*Here will be the landing page with a brief showing of items */}
-        <Hero />
-        <CreateCard />
+    {/*    <Hero />*/}
+    {/*    <CreateCard />*/}
     </div>
   );
 }

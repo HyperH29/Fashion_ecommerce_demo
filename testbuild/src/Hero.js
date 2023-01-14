@@ -54,5 +54,6 @@ function Hero() {
         </Carousel>
     );
 }
-render(<Hero />);
+// This will reader the carousel with applying it to App.js
+//render(<Hero />);
 export default Hero;

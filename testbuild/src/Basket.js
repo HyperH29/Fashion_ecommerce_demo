@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import {render} from "@testing-library/react";
 
 // This button will be for the basket it should appear on the top right corner of the screen
 
