@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CreateForm from "./Signin";
 import Hero from "./Hero";
+import CreateCard from "./Card";
 
 
 let imgs = ['https://unsplash.com/photos/mEZ3PoFGs_k']
@@ -16,6 +17,7 @@ function App() {
        {/*<CreateForm />*/}
     {/*Here will be the landing page with a brief showing of items */}
         <Hero />
+        <CreateCard />
     </div>
   );
 }
