@@ -18,7 +18,10 @@ function App() {
        {/*<CreateForm />*/}
     {/*Here will be the landing page with a brief showing of items */}
         <Hero />
+        {/*Set the cards below in a row: 3=lg 1=sm*/}
         <CreateCard />
+      <CreateCard />
+      <CreateCard />
     </div>
   );
 }
