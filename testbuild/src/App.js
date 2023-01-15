@@ -19,11 +19,15 @@ function App() {
     {/*Here will be the landing page with a brief showing of items */}
         <Hero />
         {/*Set the cards below in a row: 3=lg 1=sm*/}
+        <div className="row " style={{ backgroundColor: "black",display: "flex",  justifyContent: "center"}}>
         <CreateCard />
       <CreateCard />
       <CreateCard />
+            </div>
     </div>
   );
 }
-
+// add arrays to the card component
+// Active sign in page
+// Stake it and send work.
 export default App;

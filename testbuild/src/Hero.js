@@ -5,7 +5,7 @@ import CreateCard from "./Card";
 
 
 const slideStyles = {
-    height: "100%",width:"100%", backgroundColor: "black"
+    height: "100%",width:"100%", backgroundColor: "lightblue"
 }
 const imgStyles = {
     height: "100%", width: "100%", backgroundPosition: "center", backgroundSize: "cover"
