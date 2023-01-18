@@ -29,6 +29,7 @@ function ProfileNav() {
                         </NavDropdown>
                         <Nav.Link href="#link"><img/>Account</Nav.Link>
                         <Nav.Link href="#link"><img/>Basket</Nav.Link>
+                        <Nav.Link href="/signin">Sign Out</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

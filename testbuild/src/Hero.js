@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import {render} from "@testing-library/react";
 import CreateCard from "./Card";
-
+import ProfileNav from "./Navbar";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const slideStyles = {
     height: "100%",width:"100%", backgroundColor: "lightblue"
@@ -18,9 +20,12 @@ function Hero() {
     };
 
     return (
+        <div>
 
 
-        // Needs some tweaking not sure why images appear to big.
+    <Navbar/>
+
+
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <div style={slideStyles}>
@@ -66,6 +71,13 @@ function Hero() {
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+              <div className="row " style={{ backgroundColor: "white",display: "flex",  justifyContent: "center"}}>
+              <CreateCard />
+            <CreateCard />
+            <CreateCard />
+                  </div>
+            <Footer/>
+        </div>
     );
 }
 // This will reader the carousel with applying it to App.js
