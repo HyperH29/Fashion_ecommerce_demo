@@ -19,8 +19,5 @@ function ButtonExample() {
 }
 
 export default ButtonExample;
-
-//We will program this later
-// Get this is start when user clicks on the button await fetch from items
-// The items will contain the sign in information
+// Extra Feature
 // If the user is not signed in, then the user will be redirected to the sign in page

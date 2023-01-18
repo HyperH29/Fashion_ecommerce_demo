@@ -1,14 +1,15 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import {useState} from "react";
 
 
 // This card element will be for the items that are being sold
 //  Big screens will have 3 cards per row
 //  Small screen will have 1 card per row
-function CreateCard() {
 
-    const {open, setOpen} = useState(false);
+let items = ["This new item £60", "This is another item", "This is the last item"]
+
+
+function CreateCard() {
     return (
         // Whithin the card we will list what items are being sold
         // Once card is clicked we will show more details
@@ -18,8 +19,7 @@ function CreateCard() {
             <Card.Body>
                 <Card.Title>Card Title</Card.Title>
                 <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                    {items[0]}
                 </Card.Text>
 
                 <Button variant="primary"

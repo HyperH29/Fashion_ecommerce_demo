@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logo1 from './logo1.svg';
-import logo2 from './logo2.svg';
 
 function ProfileNav() {
     return (
@@ -36,18 +35,5 @@ function ProfileNav() {
         </Navbar>
     );
 }
-// How would I get this to work.
-// If on sign in page display name of company
-function Signin() {
-    return (
-        <Navbar bg="light" expand="md" style={{border: 20}}>
-            <Container className="nav-bar">
-                <Navbar.Brand href="#home" style={{margin: "auto"}}><img src={logo2} style={{width:200}} alt="logo1" className="logo"/></Navbar.Brand>
-            </Container>
-        </Navbar>
-    );
-}
 
-//export {ProfileNav, Signin};
-// export default Signin;
  export default ProfileNav;

@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import {render} from "@testing-library/react";
 import CreateCard from "./Card";
-import ProfileNav from "./Navbar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const slideStyles = {
     height: "100%",width:"100%", backgroundColor: "lightblue"
 }
-const imgStyles = {
-    height: "100%", width: "100%", backgroundPosition: "center", backgroundSize: "cover"
-}
+
 function Hero() {
     const [index, setIndex] = useState(0);
 
@@ -21,11 +17,7 @@ function Hero() {
 
     return (
         <div>
-
-
     <Navbar/>
-
-
         <Carousel activeIndex={index} onSelect={handleSelect}>
             <Carousel.Item>
                 <div style={slideStyles}>
@@ -81,5 +73,4 @@ function Hero() {
     );
 }
 // This will reader the carousel with applying it to App.js
-//render(<Hero />);
 export default Hero;
