@@ -1,0 +1,11 @@
+
+.App {
+    --pos:relative;
+}
+
+.Box {
+    --insert: 21px;
+    --pos: absolute;
+    --x:100;
+
+}
