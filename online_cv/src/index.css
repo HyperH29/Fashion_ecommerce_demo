@@ -2,6 +2,8 @@
 
 body {
   margin: 0;
+  background-image: linear-gradient(90deg, #f5f7fa 0%, #c3cfe2 100%);  width: 100%;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,7 +11,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+Cannot read properties of null (reading 'forEach')
