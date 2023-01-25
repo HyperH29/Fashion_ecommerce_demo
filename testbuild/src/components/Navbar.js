@@ -3,8 +3,20 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo1 from "../logo1.svg";
+import Clothing from "./Clothing";
+import { FaBeer } from "react-icons/fa";
+import { RiAccountCircleLine } from "react-icons/ri";
+import { BsFillBasketFill } from "react-icons/bs";
+import { VscSignOut } from "react-icons/vsc";
+import { useState } from "react";
 
 function ProfileNav() {
+  const [signOut, setSignOut] = useState(false);
+
+  const handleSignOut = () => {
+    setSignOut(alert("You have signed out") && true);
+  };
+
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -21,25 +33,25 @@ function ProfileNav() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">News</Nav.Link>
+            <Nav.Link href="/404">News</Nav.Link>
             <NavDropdown title="Wears" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Women</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Kids</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Men</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
+              <NavDropdown.Item href="/women">Women</NavDropdown.Item>
+              <NavDropdown.Item href="/kids">Kids</NavDropdown.Item>
+              <NavDropdown.Item href="/men">Men</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link">
-              <img />
+
+            <Nav.Link href="/account">
+              <RiAccountCircleLine />
               Account
             </Nav.Link>
-            <Nav.Link href="#link">
-              <img />
+            <Nav.Link href="/basket">
+              <BsFillBasketFill />
               Basket
             </Nav.Link>
-            <Nav.Link href="/signin">Sign Out</Nav.Link>
+            <Nav.Link onClick={handleSignOut}>
+              <BsFillBasketFill />
+              Sign Out
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
