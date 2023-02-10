@@ -1,3 +1,4 @@
+// Simple Footer component
 function Footer() {
   return (
     <footer

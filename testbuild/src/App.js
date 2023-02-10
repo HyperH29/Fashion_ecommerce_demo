@@ -5,7 +5,8 @@ import CreateForm from "./Regester/Signin";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import Clothing from "./components/Clothing";
-
+import Account from "./components/Account";
+import Basket from "./components/Basket";
 function App() {
   return (
     <BrowserRouter>
@@ -17,8 +18,8 @@ function App() {
         <Route path={"/women"} element={<Clothing />} />
         <Route path={"/men"} element={<Clothing />} />
         <Route path={"/kids"} element={<Clothing />} />
-        {/*<Route path={"/account"} element={<Profile />} />*/}
-        {/*<Route path={"/basket"} element={<Basket />} />*/}
+        <Route path={"/account"} element={<Account />} />
+        <Route path={"/basket"} element={<Basket />} />
       </Routes>
     </BrowserRouter>
   );

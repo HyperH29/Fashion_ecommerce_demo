@@ -1,0 +1,8 @@
+/*Simple css for icon */
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    margin-left: 15px;
+}

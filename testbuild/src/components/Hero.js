@@ -10,10 +10,10 @@ const slideStyles = {
   width: "100%",
   backgroundColor: "azure",
 };
-// This is the bootstrap component that I am using
 function Hero() {
   const [index, setIndex] = useState(0);
 
+  // Controls the carousel
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
@@ -63,7 +63,7 @@ function Hero() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      {/*  Styling for boxes, will separate to new component later*/}
+      {/* inLine Styling for boxes, will separate to new component later*/}
       <div
         className="row"
         style={{

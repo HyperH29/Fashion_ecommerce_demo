@@ -20,16 +20,12 @@ export default function BasicGrid() {
                {/*For each of these we will have text that will be added to whatever subject.*/}
                <Content content={"A highly motivated and skilled Junior Front-End Web Developer with 1+ years of experience in developing and designing responsive websites and web applications. Strong understanding of HTML, CSS, and JavaScript. Experience with popular front-end frameworks such as React and EJS. Proven ability to work in a team environment and deliver projects on time."}/>
                <Header icon={"https://img.icons8.com/ios-glyphs/30/null/development-skill.png"} title={'Work Experience'} date={'Date: 21/07/21'}/>
-                <Content content={"Junior Front-End Developer at [Company Name], [Dates of Employment]\n" +
-                    "                   Developed and designed responsive websites and web applications using HTML, CSS, and JavaScript\n" +
-                    "                   Utilized React and Angular to create dynamic user interfaces\n" +
-                    "                   Collaborated with cross-functional teams to deliver projects on time\n" +
-                    "                   Internship as a Front-End Developer at [Company Name], [Dates of Employment]\n" +
-                    "                   Assisted in the development and design of websites and web applications\n" +
-                    "                   Gained experience in HTML, CSS, and JavaScript.  Self taught junior developer, recently had the experiance of being granted an oppeunity to study with hyperionDev which is a bootcamp funeded by russel group to\n" +
-                    "                   create web sites, web applications and and gain the knowlege of strict coding practices to create programs using JS, HTML, CSS, React and more.\n" +
-                    "                   Utilized React to create dynamic user interfaces which are available to via the github link.\n" +
-                    "                   Collaborated with other students to deliver a series of task by the deadline. Gained a lot of experiance on the phloysife of programming and computer science.\n"}/>
+                <Content content={"I am a junior front-end developer with experience in HTML, CSS, and JavaScript. " +
+                    "I have developed and designed responsive websites and web applications using React and other frameworks. " +
+                    "I have collaborated with cross-functional teams to deliver projects on time, and gained experience during freelance work as a front-end developer. " +
+                    "I am also a self-taught junior developer who recently completed a bootcamp with HyperionDev, " +
+                    "where I learned strict coding practices and gained experience in React, HTML, CSS, and more. " +
+                    "I have also collaborated with other students to complete tasks and gained experience in programming and computer science."}/>
                <Header icon={"https://img.icons8.com/material-outlined/24/null/accuracy.png"} title={'Skills'} date={'Date: 21/07/21'}/>
                <Content content={" Strong understanding of HTML, CSS, and JavaScript\n" +
                    "                   Experience with front-end frameworks such as React and Angular\n" +
