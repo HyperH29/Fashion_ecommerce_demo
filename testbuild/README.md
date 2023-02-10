@@ -3,6 +3,8 @@
 
 This is a simple e-commerce website built with React and Bootstrap. It is a fashion store that sells clothes and accessories. It has a simple UI and is responsive. It has a cart and checkout functionality. It also has a login and register functionality.
 
+## Installation
+### `npm install`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
