@@ -3,7 +3,7 @@ import {
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
-} from "../canvas/index.js";
+} from "./canvas/index.js";
 import Hero from "./Hero.jsx";
 import Navbar from "./Navbar.jsx";
 import About from "./About.jsx";
