@@ -6,8 +6,10 @@ import { styles } from "../styles.js";
 import { github } from "../assets";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion.js";
+import { useHref } from "react-router-dom";
 
 // Change this section within projects
+
 const ProjectCard = ({
   index,
   name,
@@ -31,9 +33,9 @@ const ProjectCard = ({
           <div
             className={"absolute inset-0 flex justify-end m-3 card-img_hover"}
           >
-            <div
-              /*  Change this value to a valid url*/
-              onClick={() => window.open(source_code_Link)}
+            <a
+              /*  We can't change the path name of the url here */
+              onClick={() => window.open(source_code_Link, "url")}
               className={
                 "black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               }
@@ -43,7 +45,7 @@ const ProjectCard = ({
                 alt="github"
                 className={"w-1/2 h-1/2 object-contain"}
               />
-            </div>
+            </a>
           </div>
         </div>
         <div className={"mt-5"}>
