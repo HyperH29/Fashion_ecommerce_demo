@@ -12,37 +12,43 @@ import { SectionWrapper } from "../hoc";
 // const CurrentRef = useRef(null);
 
 const ServiceCard = ({ index, title, icon }) => {
+  const currentRef = useRef(0);
   return (
-    <Tilt className={"xs:w-[250px] w-full"}>
-      <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className={
-          "w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-        }
-      >
-        <div
-          options={{ max: 25, scale: 1, speed: 450 }}
+    <>
+      <Tilt className={"xs:w-[250px] w-full"} ref={currentRef}>
+        <motion.div
+          variants={fadeIn("right", "spring", index * 0.5, 0.75)}
           className={
-            "bg-tertiary rounded-[20px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col"
+            "w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
           }
         >
-          <img src={icon} alt={title} className={"w-16 h-16 object-contain"} />
-          <h3 className={"text-white text-[20px] font-bold text-center"}>
-            {title}
-          </h3>
-        </div>
-      </motion.div>
-    </Tilt>
+          <div
+            options={{ max: 25, scale: 1, speed: 450 }}
+            className={
+              "bg-tertiary rounded-[20px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col"
+            }
+          >
+            <img
+              src={icon}
+              alt={title}
+              className={"w-16 h-16 object-contain"}
+            />
+            <h3 className={"text-white text-[20px] font-bold text-center"}>
+              {title}
+            </h3>
+          </div>
+        </motion.div>
+      </Tilt>
+    </>
   );
 };
 
 const About = () => {
-  const nodeRef = React.useRef(null);
   // On motion.div variant I changed textVariant to fadeIn
   // Had an issue with the textVariant not taking in up direction.
   return (
     <>
-      <motion.div nodeRef={nodeRef} variants={fadeIn("down")}>
+      <motion.div variants={fadeIn("down")}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
@@ -75,3 +81,6 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+
+// react-dom.development.js:86 Warning: findDOMNode is deprecated in StrictMode. findDOMNode was passed an instance of Tilt2 which is inside StrictMode.
+// Instead, add a ref directly to the element you want to reference.

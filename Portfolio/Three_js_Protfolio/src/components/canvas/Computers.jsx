@@ -2,8 +2,6 @@ import * as Three from "three";
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-import { HemisphereLight, PointLight } from "three";
-import { Mesh } from "three";
 
 import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
