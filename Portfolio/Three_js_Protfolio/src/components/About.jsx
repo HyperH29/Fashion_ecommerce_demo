@@ -84,3 +84,5 @@ export default SectionWrapper(About, "about");
 
 // react-dom.development.js:86 Warning: findDOMNode is deprecated in StrictMode. findDOMNode was passed an instance of Tilt2 which is inside StrictMode.
 // Instead, add a ref directly to the element you want to reference.
+
+// Add to Readme: https://www.youtube.com/watch?v=0fYi8SGA20k&t=9641s
