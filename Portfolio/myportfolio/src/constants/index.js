@@ -1,6 +1,34 @@
 // Up here we import all the images we need for the project
 
-export const navLink = [
+import object from "../assets/core/3d-object-50.png";
+import devIcon from "../assets/core/developer-50.png";
+import uxdesign from "../assets/core/ux-design-96.png";
+import webdesign from "../assets/core/web-design-50.png";
+import blpIcon from "../assets/companies/blp.png";
+import freelanceIcon from "../assets/companies/freelance-64.png";
+import hpd from "../assets/companies/hyperiondev-logo.jpg";
+import lab from "../assets/companies/lab.png";
+import adobeIcon from "../assets/workflows/adobe.png";
+import blenderIcon from "../assets/workflows/blender.png";
+import figmaIcon from "../assets/workflows/figma.png";
+import gitIcon from "../assets/workflows/git.png";
+import htmlIcon from "../assets/workflows/html.png";
+import jsIcon from "../assets/workflows/javascript.png";
+import nodeIcon from "../assets/workflows/nodejs.png";
+import tsIcon from "../assets/workflows/typescript.png";
+import cssIcon from "../assets/workflows/css.png";
+import mongoIcon from "../assets/workflows/mongodb.png";
+import mysqlIcon from "../assets/workflows/mysql-logo.png";
+import reactIcon from "../assets/workflows/reactjs.png";
+import tailwindIcon from "../assets/workflows/tailwind.png";
+import threeIcon from "../assets/workflows/threejs.svg";
+import unityIcon from "../assets/workflows/unity.png";
+import unrealIcon from "../assets/workflows/unreal-engine2.png";
+import eCycles from "../assets/E-cycles_ecommerce.png";
+import zenZone from "../assets/zen_zone_site.png";
+import ckey from "../assets/game_keys.png";
+
+export const navLinks = [
   {
     id: "about",
     title: "About"
@@ -21,16 +49,16 @@ export const navLink = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: devHead
+    title: "Developer",
+    icon: devIcon
   },
   {
     title: "Web Designer",
-    icon: designIcon
+    icon: uxdesign
   },
   {
-    title: "undefined",
-    icon: undefinedIcon
+    title: "Graphic Designer",
+    icon: object
   }
 ];
 
@@ -116,7 +144,7 @@ const experience = [
   {
     title: "Web Developer",
     occupation: "Student",
-    icon: studentIcon,
+    icon: freelanceIcon,
     iconBg: "#F5F5F5",
     date: "November 2022 - February 2023",
     points: [
@@ -150,7 +178,7 @@ const testimonials = [
     name: "John Doe",
     occupation: "CEO of Company",
     company: "Company",
-    image: johnDoe
+    image: mongoIcon
   },
   {
     testimonial:
@@ -158,7 +186,7 @@ const testimonials = [
     name: "Jane Doe",
     occupation: "CEO of Company",
     company: "Company",
-    image: janeDoe
+    image: threeIcon
   },
   {
     testimonial:
@@ -166,7 +194,7 @@ const testimonials = [
     name: "Jane Doe",
     occupation: "CEO of Company",
     company: "Company",
-    image: janeDoe
+    image: webdesign
   }
 ];
 
@@ -240,7 +268,7 @@ const projects = [
         color: "green-text-gradient"
       }
     ],
-    image: chekeyCoins,
+    image: ckey,
     source_code_link: "https://github.com/"
   }
 ];
