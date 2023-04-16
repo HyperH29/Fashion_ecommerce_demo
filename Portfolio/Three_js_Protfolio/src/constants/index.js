@@ -1,28 +1,32 @@
 import {
-  mobile,
   backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  gamekeys,
   threejs,
+  zenzone,
+  ecycles,
+  lab,
+  hdevIcon,
+  blpIcon,
+  flIcon,
+  devIcon,
+  uxIcon,
+  object,
+  mysql,
+  blender,
+  adobe,
+  unity,
+  csharp,
+  unreal,
 } from "../assets";
 
 export const navLinks = [
@@ -36,26 +40,26 @@ export const navLinks = [
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contact me",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Developer",
+    icon: devIcon,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Web Designer",
+    icon: uxIcon,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Graphic Designer",
+    icon: object,
   },
 ];
 
@@ -77,21 +81,22 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "blender",
+    icon: blender,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "figma",
+    icon: figma,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
+
   {
     name: "MongoDB",
     icon: mongodb,
@@ -101,63 +106,67 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Unreal",
+    icon: unreal,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "adobe",
+    icon: adobe,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web Developer",
+    company_name: "Self Taught",
+    icon: lab,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2022 - Nov 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Learning the ropes of web development using youtube, Udemy and freeCodeCamp",
+      "Learning how different software's work in development space",
+      "Programming in different languages, learning about behavior and syntax",
+      "Practiced on different projects to gain experience",
+      "Helped others online with questions and problems",
+      "Deployed projects on different platforms",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Student Developer",
+    company_name: "HyperionDev",
+    icon: hdevIcon,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Nov 2022 - Feb 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Continued learning in a fast paced environment",
+      "Being assigned projects to finish under a certain time frame",
+      "Code reviewed by experts in the field to find bugs and improve code",
+      "Collaborated with a online team environment to complete projects",
+      "Deployed projects and refactored code to have the most efficient code possible",
     ],
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "BLP",
+    icon: blpIcon,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "March 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Helped a small business with their website",
+      "Designed a webpage for local business",
+      "Consulted with the business owner to find the best solution for their needs",
+      "Worked together in a team environment to complete the project",
+      "Finalized project ensuring that the client knows how to increase their online presence",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "FreeLance Developer",
+    company_name: "Self Employed",
+    icon: flIcon,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
@@ -198,13 +207,13 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "E-Cycles",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, " +
       "providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "gatsby",
         color: "blue-text-gradient",
       },
       {
@@ -212,15 +221,15 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "bootstrap",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: ecycles,
     source_code_link: "https://github.com/dashboard",
   },
   {
-    name: "Job IT",
+    name: "Cheeky Keys",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -233,15 +242,15 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: gamekeys,
     source_code_link: "https://github.com/dashboard",
   },
   {
-    name: "Trip Guide",
+    name: "Zenzone",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -258,7 +267,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: zenzone,
     source_code_link: "https://github.com/dashboard",
   },
 ];

@@ -6,6 +6,8 @@ import {
 } from "./canvas/index.js";
 import Hero from "./Hero.jsx";
 import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
+
 import About from "./About.jsx";
 import Tech from "./Tech.jsx";
 import Experience from "./Experience.jsx";
@@ -22,6 +24,7 @@ export {
   Works,
   Feedbacks,
   Contact,
+  Footer,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,

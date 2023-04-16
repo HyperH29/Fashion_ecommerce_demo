@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-[#452E60]`}
     >
       <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
         <Link
@@ -21,12 +21,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img
-            src={logo}
-            alt={logo}
-            className="w-9 h9 object-contain bg-white"
-          />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <img src={logo} alt={logo} className="w-9 h9 object-contain" />
+          <p className="text-[#7C9094] text-[18px] mr-8 font-bold cursor-pointer flex">
             Hamza &nbsp;<span className="sm:block hidden">Khan-Benjamin</span>
           </p>
         </Link>
@@ -35,11 +31,16 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
+                active === link.title ? "text-white" : "text-[#7C9094]"
               } hover:text-white text-[18px] font-medium cursor-pointer `}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`} className=" ">
+              <a
+                href={`#${link.id}`}
+                className={
+                  link.title === "Contact me" ? "gradient-animation" : ""
+                }
+              >
                 {link.title}
               </a>
             </li>
@@ -73,9 +74,7 @@ const Navbar = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  <a href={`#${link.id}`} className=" ">
-                    {link.title}
-                  </a>
+                  <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
             </ul>

@@ -7,6 +7,7 @@ import {
   Contact,
   Experience,
   Feedbacks,
+  Footer,
   Hero,
   Navbar,
   StarsCanvas,
@@ -14,8 +15,8 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-patten bg-cover bg-no-repeat bg-center">
+      <div className="relative z-0 bg-[#292332]">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
@@ -28,6 +29,7 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

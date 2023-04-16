@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion.js";
+import { fadeIn } from "../utils/motion.js";
 import { SectionWrapper } from "../hoc";
 
 // Issue below overview still hidden when in position
@@ -23,9 +23,9 @@ const ServiceCard = ({ index, title, icon }) => {
           }
         >
           <div
-            options={{ max: 25, scale: 1, speed: 450 }}
+            options={{ max: 35, scale: 2, speed: 850 }}
             className={
-              "bg-tertiary rounded-[20px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col"
+              "bg-[#452E60 ]rounded-[20px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col"
             }
           >
             <img
@@ -33,7 +33,7 @@ const ServiceCard = ({ index, title, icon }) => {
               alt={title}
               className={"w-16 h-16 object-contain"}
             />
-            <h3 className={"text-white text-[20px] font-bold text-center"}>
+            <h3 className={"text-black-100 text-[20px] font-bold text-center"}>
               {title}
             </h3>
           </div>
@@ -56,20 +56,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={"mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"}
       >
-        Welcome to my portfolio! As a skilled junior web developer, I am on a
-        mission to make a mark on the world wide web. With expertise in
-        languages such as TypeScript, JavaScript, HTML, and CSS, as well as
-        experience with frameworks like React, Node.js, Tailwind, Express, and
-        Three.js, I am committed to building efficient, user-friendly
-        experiences for all to enjoy. I thrive on problem-solving and am
-        constantly seeking ways to improve my skills and abilities. As a strong
-        communicator, I work well with both clients and colleagues, ensuring
-        that everyone is on the same page throughout the development process. I
-        believe that web development has the power to drive big innovations and
-        make a meaningful impact on people's lives. That's why I am dedicated to
-        being a part of this exciting field and using my skills to bring
-        positive change to the world. Thank you for visiting my portfolio, and I
-        look forward to the opportunity to collaborate with you.
+        Welcome to my portfolio! As an ambitious junior web developer, I'm
+        dedicated to making a lasting impact on the digital landscape.
+        Proficient in TypeScript, JavaScript, HTML, and CSS, I excel in
+        frameworks like React, Node.js, Tailwind, Express, and Three.js. My
+        passion lies in creating efficient, user-friendly experiences that
+        everyone can enjoy. I thrive on problem-solving and constantly seek to
+        enhance my skills. A strong communicator, I collaborate effectively with
+        clients and colleagues, ensuring seamless coordination throughout the
+        development process. Driven by the belief that web development can spark
+        innovation and positively impact people's lives, I'm committed to using
+        my expertise for meaningful change. Thank you for visiting my portfolio
+        – I look forward to the opportunity to work with you.
       </motion.p>
       <div className={"mt-10 flex flex-wrap gap-10"}>
         {services.map((service, index) => (

@@ -6,7 +6,6 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   return (
     <section className={"relative w-full h-screen mx-auto"}>
-      {/*  Styling for border */}
       <div
         className={`${styles.paddingX} absolute insert-0 top-[120px] max-w-7xl mx-auto flex flex-row justify-center items-start gap-5`}
       >
@@ -19,7 +18,7 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText}`}>
             Hi, i'm <span className={"text-[#915eff]"}>Hamza</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-#E8BBB6`}>
             I develop web applications, web experiences and user{" "}
             <br className={"sm:block hidden"} /> interfaces for people to enjoy.
           </p>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lato:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Monserrat", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -45,8 +45,8 @@
 
 .green-pink-gradient {
   background: #00cea8;
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #7C9094 0.5%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #7C9094 0.5%, #bf61ff 97.5%);
 }
 
 .orange-text-gradient {
@@ -113,6 +113,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.react-vertical-timeline .vertical-timeline-element::before {
+  background: #E8BBB6
+;
+}
+
 
 /* canvas- styles */
 .canvas-loader {
@@ -202,3 +208,25 @@
     -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  100% {
+    background-position: -100% 25%;
+  }
+
+}
+
+.gradient-animation {
+  background: linear-gradient(90deg, #00cea8, #a8e743, #d9ee57, #eed327);
+  background-size: 400% 400%;
+  animation: gradient 30s ease infinite;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline;
+}
+
+
+

@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useRef } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
   Decal,
   Float,
@@ -11,14 +11,30 @@ import {
 import CanvasLoader from "../Loader";
 
 // Play with the values here:
+
+const CustomFrameRate = ({ fps = 30 }) => {
+  const { set } = useThree();
+  const previousTimeRef = useRef(0);
+  useFrame((state, delta) => {
+    const currentTime = state.clock.elapsedTime;
+    if (currentTime - previousTimeRef.current > 1 / fps) {
+      previousTimeRef.current = currentTime;
+      set({ frameloop: "always" });
+      state.gl.render(state.scene, state.camera);
+      set({ frameloop: "demand" });
+    }
+  });
+  return null;
+};
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
+  const meshRef = useRef();
 
   return (
-    <Float speed={10} rotationIntensity={0.4} floatIntensity={1}>
+    <Float speed={10} rotationIntensity={0.2} floatIntensity={0.2}>
       <ambientLight intensity={0.3} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2.75}>
+      <mesh ref={meshRef} scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color={"#fff8eb"}
@@ -40,13 +56,10 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
+    <Canvas dpr={[1, 2]} gl={{ preserveDrawingBuffer: true }}>
+      <CustomFrameRate fps={30} />
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} autoRotate />
+        <OrbitControls enableZoom={false} />
         <Ball imgUrl={icon} />
       </Suspense>
 
